@@ -27,7 +27,7 @@
                         <a href="../pages/pageForm.html" class="nav-link">Form</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../C3TESTDB/TESTA/" class="nav-link">News</a>
+                        <a href="#" class="nav-link">News</a>
                     </li>
                     <li class="nav-item">
                         <a href="../pages/commentPage.html" class="nav-link">Comments</a>
