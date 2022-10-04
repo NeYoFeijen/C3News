@@ -13,6 +13,35 @@
     <div class="MAINHREF"> <!-- Deze class zorgt ervoor dat de linkjes bovenaan in het midden kommen te staan -->
         <a href="../">MAIN - FILE</a><br>
     </div>
+
+ <!-- navigation bar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+
+            <!-- collapse button en home button -->
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbartarget">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+
+            <!-- list with links that switch between collapse list and in a row at the top-->
+            <div class="navbar-collapse collapse" id="navbartarget">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="pageForm.html" class="nav-link">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../C3TESTDB/TESTA/" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="commentPage.html" class="nav-link">Comments</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
     <?php // setup database
         $servername = "localhost";
         $username = "root";
