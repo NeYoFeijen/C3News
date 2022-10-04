@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/commentPage.js" defer></script>
+    <title>Comments</title>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+
+            <!-- collapse button en home button -->
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbartarget">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+
+            <!-- list with links that switch between collapse list and in a row at the top-->
+            <div class="navbar-collapse collapse" id="navbartarget">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="pageForm.html" class="nav-link">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">page2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="commentPage.html" class="nav-link">Comments</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- page column -->
+    <div class="container-md d-flex flex-column align-items-center">
+
+        <!-- commentPage button and text input -->
+        <div class="container-lg">
+            <textarea id="newTitleInput" class="form-control mt-4" rows="1" type="text"></textarea>
+            <textarea id="newCommentInput" class="form-control mt-1" rows="4" type="text"></textarea>
+
+            <button id="NewCommentButton" class="btn btn-success mt-2 w-100" onclick="newComment()">Add new comment</button>
+
+        </div>
+
+
+        <!-- Comments -->
+
+        <div id="comment-container" class="container-md d-flex flex-column-reverse text-wrap">
+
+            <div class="d-flex mt-4">
+                <div class="me-3">
+                    <img src="../images/blank-profile.png" alt="profile picture" style="width: 64px;">
+                </div>
+                <div>
+                    <h5 class="fw-bold">
+                        title
+                        <small class="text-muted">Date</small>
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis convallis interdum. Phasellus id ante justo. Duis porttitor eros augue, in auctor lectus tincidunt eget. Curabitur ut fringilla augue. Mauris imperdiet velit tortor, nec lobortis mauris sagittis sit amet. Nulla ultricies ante eros, ultricies laoreet sapien porta non. Cras hendrerit felis convallis, auctor tellus a, luctus est. Donec et accumsan nisl.
+
+                        Aenean eu faucibus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec aliquet ipsum id mauris dapibus auctor. Cras iaculis arcu sed nisl molestie, at ullamcorper metus pellentesque. In sed nulla vitae velit dignissim dapibus. Phasellus elementum vehicula mi, nec sagittis erat elementum vel. Nunc viverra id urna eu facilisis. Proin commodo tempor felis, sed facilisis elit.
+                        
+                        Proin consequat libero lobortis facilisis sodales. Suspendisse potenti. Mauris arcu orci, ultrices non condimentum id, sollicitudin sit amet lorem. Phasellus sodales accumsan ullamcorper. Mauris sed venenatis diam. Ut et nunc nulla. Quisque non ante cursus turpis efficitur posuere. Proin aliquam sit amet elit at placerat.
+                        
+                        Nulla lacinia est vel enim porta, in tempus sapien lacinia. Pellentesque nec nisi vitae tellus mollis consequat non faucibus massa. Ut quis odio diam. Mauris accumsan neque id sapien lobortis, ut ornare dolor cursus. Proin et est ultricies, consequat quam et, malesuada urna. Ut in condimentum mi. Proin bibendum, felis quis suscipit viverra, diam dui mattis ipsum, et placerat ligula turpis viverra lectus. Nulla eros dolor, condimentum et ullamcorper id, commodo vel lectus. Mauris aliquet lectus in aliquet consequat. Nullam quis accumsan quam. Proin bibendum ultricies arcu, et varius justo. Nam et dolor sed arcu vulputate malesuada aliquam ut elit.
+                        
+                        Etiam tellus leo, pretium vel velit ac, cursus sodales metus. Mauris cursus semper orci ac ultricies. Duis auctor nisl vitae lacinia condimentum. Nulla ac viverra eros. Donec vehicula rutrum pulvinar. Nullam vitae iaculis dolor. Etiam a mi et metus laoreet tempor. Nulla facilisi. Aenean eu elementum lorem. Morbi placerat commodo libero sit amet luctus. Pellentesque ultrices aliquet sapien vel porta. Integer facilisis lacus fringilla tortor efficitur accumsan. Pellentesque condimentum augue tempus suscipit varius. Sed ut varius neque. Praesent aliquam semper urna, et lobortis mi luctus nec.
+                    </p>
+                    <button class="btn btn-warning" onclick="newInputField(event)">Reply</button>
+                </div>
+            </div>
+
+            <div class="d-flex mt-4">
+                <div class="me-3">
+                    <img src="../images/blank-profile.png" alt="profile picture" style="width: 64px;">
+                </div>
+                <div>
+                    <h5 class="fw-bold">
+                        title
+                        <small class="text-muted">Date</small>
+                    </h5>
+                    <p>jaja</p>
+                    <button class="btn btn-warning" onclick="newInputField(event)">Reply</button>
+                    <div class="d-flex mt-4">
+                        <div class="me-3">
+                            <img src="../images/blank-profile.png" alt="profile picture" style="width: 64px;">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">
+                                title
+                                <small class="text-muted">Date</small>
+                            </h5>
+                            <p>neenee</p>
+                            <button class="btn btn-warning" onclick="newInputField(event)">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+
+    </div>
