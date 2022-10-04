@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="MAINHREF"> <!-- Deze class zorgt ervoor dat de linkjes bovenaan in het midden kommen te staan -->
-        <a href="http://localhost/C3TESTDB/">MAIN - FILE</a><br>
+        <a href="../">MAIN - FILE</a><br>
     </div>
     <?php // setup database
         $servername = "localhost";
