@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="testAsheet.css">
 </head>
 <body>
-    <div class="MAINHREF"> <!-- Deze class zorgt ervoor dat de linkjes bovenaan in het midden kommen te staan -->
-        <a href="../">MAIN - FILE</a><br>
-    </div>
-
  <!-- navigation bar -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
