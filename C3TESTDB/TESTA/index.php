@@ -24,13 +24,13 @@
             <div class="navbar-collapse collapse" id="navbartarget">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="pageForm.html" class="nav-link">Form</a>
+                        <a href="../pageForm.html" class="nav-link">Form</a>
                     </li>
                     <li class="nav-item">
                         <a href="../C3TESTDB/TESTA/" class="nav-link">News</a>
                     </li>
                     <li class="nav-item">
-                        <a href="commentPage.html" class="nav-link">Comments</a>
+                        <a href="../commentPage.html" class="nav-link">Comments</a>
                     </li>
                 </ul>
             </div>
