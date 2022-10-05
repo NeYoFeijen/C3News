@@ -37,52 +37,22 @@
 
         </div>
     </nav>
-
-    <?php // setup database
-        $servername = "localhost";
-        $username = "C3user";
-        $password = "i1pvjGoRwC_";
-        $dbname = "deelblokken";
-
-        // Create connection
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-        // Check connection
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
-    ?>
   
         <!-- Carousel -->
         <div id="demo" class="carousel slide">
         
               <!-- Dit is carousel 1 / main-->
-              
-                            <?php
-                                $sql = "SELECT * FROM setupblok";
-                                $result = mysqli_query($conn, $sql);
-
-                                //Ophalen van de gegevens (nieuwsartikelen) uit de database
-                                if (mysqli_num_rows($result) > 0) {
-                                        // output data of each row
-                                        for ($pagina = 0; $pagina < 3; $pagina++){
-                                                echo '<div class="carousel-item active">';
-                                                echo '<div class="container">';
-                                                echo '<div class="row">';
-                                                    while($row = mysqli_fetch_assoc($result)) {
-                                                        echo "<div class='col-sm-4'>";
-                                                        echo "<h3>".$row["Header"]."</h3>";
-                                                        echo "<p>".$row["tekstA"]."</p>";
-                                                        echo "<p>".$row["tekstB"]."</p>";
-                                                        echo "</div>";
-                                        }
-                                        echo "</div>";
-                                        echo "</div>";
-                                        echo "</div>";
-                                    }} else {
-                                        echo "0 results";
-                                    }  
-                            ?>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-sm-4'>
+                                <h3>".$row["Header"]."</h3>
+                                <p>".$row["tekstA"]."</p>
+                                <p>".$row["tekstB"]."</p>
+                            </div>          
+                        </div>
+                    </div>
+                </div>
 
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -94,7 +64,3 @@
         </div>
 </body>
 </html>
-
-<?php
-    mysqli_close($conn);
-?>
