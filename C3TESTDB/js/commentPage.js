@@ -38,7 +38,7 @@ function newComment() {
     let commentButton = document.createElement('button');
     commentButton.classList.add("btn", "btn-warning")
     commentButton.addEventListener("click", newInputField);
-    commentButton.innerText = "Reply";
+    commentButton.innerText = "Reageer";
     // add to body
     commentBodyDiv.appendChild(commentBodyTitle);
     commentBodyDiv.appendChild(commentBodyText);
@@ -100,7 +100,7 @@ function newReaction(e, parentElement) {
     let commentButton = document.createElement('button');
     commentButton.classList.add("btn", "btn-warning")
     commentButton.addEventListener("click", newInputField);
-    commentButton.innerText = "Reply";
+    commentButton.innerText = "Reageer";
     // add to body
     commentBodyDiv.appendChild(commentBodyTitle);
     commentBodyDiv.appendChild(commentBodyText);
@@ -131,7 +131,7 @@ function newInputField(e) {
     let replyButton = document.createElement('button');
     replyButton.classList.add("btn", "btn-warning", "mt-2", "w-100");
     replyButton.addEventListener('click', handleReplyConfirm);
-    replyButton.innerText = "Reply";
+    replyButton.innerText = "Reageer";
 
     containerDiv.appendChild(titleInput);
     containerDiv.appendChild(bodyTextInput);
