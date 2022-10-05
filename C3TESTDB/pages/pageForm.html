@@ -45,13 +45,13 @@
 
     <!-- alert div for danger -->
     <div class="alert alert-danger alert-dismissible hide" id="dangerAlert">
-        <strong>Error!</strong> Form not filled in correctly. Please try again.
+        <strong>Error!</strong> Formulier niet goed ingevuld. Probeer het opnieuw.
         <button class="btn-close" onclick="hideDangerAlert()"></button>
     </div>
 
     <!-- alert div for success -->
     <div class="alert alert-success alert-dismissible hide" id="successAlert">
-        <strong>succeeded!</strong> Form filled in correctly. Thanks!
+        <strong>Gelukt!</strong> Formulier goed ingevuld. Bedankt.
         <button class="btn-close" onclick="hideSuccessAlert()"></button>
     </div>
 
@@ -60,17 +60,17 @@
 
         <div class="form-floating col-lg-6  mt-3">
             <input type="text" class="form-control" id="name" name="fName" placeholder="Name">
-            <label for="name">Name</label>
+            <label for="name">Naam</label>
         </div>
 
         <div class="form-floating col-lg-6 mt-3">
             <input type="text" class="form-control" id="adress" name="fAdress" placeholder="Adress">
-            <label for="adress">Adress</label>
+            <label for="adress">Adres</label>
         </div>
 
         <div>
             <button type="button" class="btn btn-dark mt-3" data-bs-toggle="modal"
-                data-bs-target="#formModal">Send</button>
+                data-bs-target="#formModal">Versturen</button>
         </div>
 
     </form>
@@ -82,18 +82,18 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h3 class="modal-title">Confirmation</h3>
+                    <h3 class="modal-title">Bevestiging</h3>
                 </div>
 
                 <div class="modal-body">
-                    Are you sure you want to submit these fields?
+                    Weet u zeker dat u het wilt versturen?
                 </div>
 
                 <div class="modal-footer">
                     <div>
-                        <button class="btn btn-danger" data-bs-dismiss="modal">no</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">nee</button>
                         <button id="submitFormButton" onclick="validateForm()" class="btn btn-success"
-                            data-bs-dismiss="modal">yes</button>
+                            data-bs-dismiss="modal">ja</button>
                     </div>
                 </div>
 
