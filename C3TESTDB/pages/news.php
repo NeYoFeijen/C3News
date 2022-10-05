@@ -40,8 +40,8 @@
 
     <?php // setup database
         $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $username = "C3user";
+        $password = "i1pvjGoRwC_";
         $dbname = "deelblokken";
 
         // Create connection
