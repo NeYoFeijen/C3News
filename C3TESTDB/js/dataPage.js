@@ -1,26 +1,20 @@
-function filterTable() {
+function filterData() {
     let searchInput = document.getElementById("searchInput");
-    let table = document.getElementById("myTable");
-    let tr = table.getElementsByTagName("tr")
-    let td;
-    let txtValue;
     let filter = searchInput.value.toLowerCase();
+    filteredData.length = 0;
 
-    for (r = 0; r < tr.length; r++) {
-
-        tr[r].style.display = "none";
-
-        for (c = 0; c < 2; c++) {
-            td = tr[r].getElementsByTagName("td")[c];
-            if (td) {
-                txtValue = td.innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                    tr[r].style.display = "";
-                } 
+    if (filter.length < 1) {
+        filteredData = [...data];
+    } else {
+        data.forEach(c => {
+                if (c["Title"].toLowerCase().indexOf(filter) > -1) {
+                filteredData.push(c);
             }
-        }
+        });
     }
-};
+
+    renderTable();
+}
 
 const pageSize = 10;
 let curPage = 1;
@@ -33,8 +27,7 @@ function previousPage() {
 }
 
 function nextPage() {
-    if(curPage < 3) {
-        // !!!!!!!!!!!!!!!!!!!!
+    if((curPage * pageSize) < filteredData.length) {
         curPage++;
         renderTable();
     }
@@ -44,7 +37,7 @@ function nextPage() {
 function renderTable() {
     let table = document.getElementById("myTable");
     let result = '';
-    data.filter((row, index) => {
+    filteredData.filter((row, index) => {
           let start = (curPage-1)*pageSize;
           let end =curPage*pageSize;
           if(index >= start && index < end) return true;
@@ -60,4 +53,6 @@ function renderTable() {
     table.innerHTML = result;
 }
 
-renderTable();
+let filteredData = [];
+
+filterData();
