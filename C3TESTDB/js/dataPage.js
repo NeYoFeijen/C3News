@@ -39,6 +39,7 @@ function nextPage() {
         renderTable();
     }
 }
+//https://www.raymondcamden.com/2022/03/14/building-table-sorting-and-pagination-in-javascript
 
 function renderTable() {
     let table = document.getElementById("myTable");
