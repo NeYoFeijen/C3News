@@ -23,6 +23,7 @@ function previousPage() {
     if(curPage > 1) {
         curPage--;
         renderTable();
+        document.getElementById('pageNumber').innerText = curPage;
     }
 }
 
@@ -30,6 +31,7 @@ function nextPage() {
     if((curPage * pageSize) < filteredData.length) {
         curPage++;
         renderTable();
+        document.getElementById('pageNumber').innerText = curPage;
     }
 }
 //https://www.raymondcamden.com/2022/03/14/building-table-sorting-and-pagination-in-javascript
