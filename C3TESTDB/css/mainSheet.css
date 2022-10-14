@@ -2,3 +2,16 @@ body {
     background-color: #ccc5c5;
     /* background-color: #881EE4; */
 }
+
+#bats {
+    animation: bats 4s linear 0s 1 normal;
+    animation-fill-mode: forwards;
+    position: fixed;
+    bottom: 50%;
+}
+
+@keyframes bats {
+    0% {margin-left:-100%;}
+    50% {margin-left:0%;}
+    100% {margin-left: 100%;}
+}
