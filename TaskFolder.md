@@ -10,3 +10,12 @@ Pagina waar je op zit moet de 'home' texture krijgen (zodat het duidelijker is d
 Carousel (news) fixen: Ne-Yo 
 Arrows fixen van de Carousel in de newsPage (fullscreen) - Fixed
 Wanneer de nav smaller wordt (bijvoorbeeld wanneer je ipad vieuw pakt rechtop) verdwijnen de arrows om de carousel te draaien.
+
+
+documentatie checklist:
+???????????????????????????????????????
+backlog etc.
+
+Definitiestudie
+
+Functioneel en Technische ontwerp (D2)
