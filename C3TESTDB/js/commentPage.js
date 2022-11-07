@@ -13,7 +13,7 @@ function newComment() {
     let commentImageDiv = document.createElement('div');
     commentImageDiv.classList.add("me-3")
     let commentImage = document.createElement('img');
-    commentImage.src = "../images/blank-profile.png";
+    commentImage.src = "../images/commentPage/blank-profile.png";
     commentImage.style.width = "64px";
     commentImageDiv.appendChild(commentImage);
 
@@ -75,7 +75,7 @@ function newReaction(e, parentElement) {
     let commentImageDiv = document.createElement('div');
     commentImageDiv.classList.add("me-3")
     let commentImage = document.createElement('img');
-    commentImage.src = "../images/blank-profile.png";
+    commentImage.src = "../images/commentPage/blank-profile.png";
     commentImage.style.width = "64px";
     commentImageDiv.appendChild(commentImage);
 
